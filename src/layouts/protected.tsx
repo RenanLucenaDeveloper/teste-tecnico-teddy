@@ -1,8 +1,8 @@
 import { Navigate, Outlet } from "react-router";
-import { useAuth } from "../hooks/useAuth";
+import { useAuthData } from "../store/auth";
 
 export function ProtectedLayout() {
-  const { isAuthenticated } = useAuth();
+  const { isAuthenticated } = useAuthData();
 
   if (!isAuthenticated) {
     return <Navigate to="/login" replace />;

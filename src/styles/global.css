@@ -34,8 +34,8 @@ img {
 
 :root {
     /* Brand */
-    --brand-primary: #EC6724;
-    --brand-primary-hover: #c45118;
+    --brand-primary: #ec6724;
+    --brand-primary-hover: #ff5500;
 
     /* Text */
     --primary-text: #000000;
@@ -57,6 +57,9 @@ img {
 
 body {
     background-color: var(--app-bg);
+}
+
+* {
     color: var(--primary-text);
 }
 
@@ -101,6 +104,14 @@ body {
     background-color: var(--danger);
 }
 
+.brand-hover:hover {
+    transition: .3s background-color;
+}
+
+.brand-hover:hover {
+    background-color: var(--brand-primary-hover);
+}
+
 /* ------------------------------------------------------------------------------------ */
 /* Fonts */
 
@@ -110,3 +121,14 @@ body {
 .fw-600 { font-weight: 600 !important; }
 .fw-700 { font-weight: 700 !important; }
 
+
+/* ------------------------------------------------------------------------------------ */
+/* Input */
+
+input::placeholder {
+    color: var(--placeholder-text);
+}
+
+input {
+    border-color: var(--placeholder-text);
+}
