@@ -1,4 +1,4 @@
-import SpinLoadingSVG from '../assets/svg/spin-loading.svg'
+import SpinLoadingSVG from '@assets/icons/spin-loading.svg'
 
 type props = { 
     children: React.ReactNode,
@@ -12,8 +12,8 @@ const Button = ({ children, className, disabled = false, loading = false, ...pro
       disabled={disabled}
       className={`
         rounded-sm border-0 brand-bg brand-hover 
-        w-full py-4 relative
-        text-center oposite-text text-2xl fw-700 
+        py-3 md:py-4 w-full relative 
+        text-center text-lg md:text-2xl fw-700 oposite-text  
         cursor-pointer disabled:cursor-default disabled:opacity-60
         transition-opacity duration-300
         ${className}`} 

@@ -112,6 +112,15 @@ body {
     background-color: var(--brand-primary-hover);
 }
 
+a.active {
+    color: var(--brand-primary);
+    text-decoration: underline;
+}
+
+a.active img {
+    filter: invert(30%) sepia(90%) saturate(900%) hue-rotate(0deg) brightness(125%) contrast(100%);
+}
+
 /* ------------------------------------------------------------------------------------ */
 /* Fonts */
 
@@ -131,4 +140,16 @@ input::placeholder {
 
 input {
     border-color: var(--placeholder-text);
+}
+
+
+/* ------------------------------------------------------------------------------------ */
+/* sidebar */
+
+.sidebar-backdrop.active {
+    display: block;
+}
+
+.sidebar.active {
+    translate: none;
 }
