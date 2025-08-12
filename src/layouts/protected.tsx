@@ -20,6 +20,8 @@ export function ProtectedLayout() {
   return <>
     <Header userName={userName} setSidebarStatus={ setSidebarStatus }/>
     <Sidebar sidebarStatus={sidebarStatus} setSidebarStatus={ setSidebarStatus }/>
-    <Outlet/>
+    <div className="w-full pt-21">
+      <Outlet/>
+    </div>
   </>;
 }

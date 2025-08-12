@@ -7,11 +7,18 @@ import path from 'path';
 export default defineConfig({
   plugins: [
     react(),
-    tailwindcss()
+    tailwindcss(),
   ],
   resolve: {
     alias: {
       '@assets': path.resolve(__dirname, 'src/assets'),
+    },
+  },
+  server: {
+    host: true,
+    port: 5173,
+    watch: {
+      usePolling: true,
     },
   },
 })

@@ -112,6 +112,11 @@ body {
     background-color: var(--brand-primary-hover);
 }
 
+/* Other colors */
+.brand-border {
+    border-color: var(--brand-primary);
+}
+
 a.active {
     color: var(--brand-primary);
     text-decoration: underline;

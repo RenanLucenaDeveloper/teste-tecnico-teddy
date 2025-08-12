@@ -13,7 +13,7 @@ const Header = ({ userName, setSidebarStatus }: headerProps) => {
     return (
     <header className="
         fixed top-0 lef-0 z-99
-        w-full app-bg
+        w-full bg-white
         px-8 md:px-14 py-4
         shadow-sm 
     ">

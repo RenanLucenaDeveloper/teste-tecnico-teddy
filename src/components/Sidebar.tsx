@@ -24,7 +24,7 @@ const Sidebar = ({ setSidebarStatus, sidebarStatus }: sidebarProps) => {
 
             {/* Sidebar */}
             <div className={`
-              sidebar
+              sidebar bg-white
               h-full fixed top-0 left-0 z-9999
               translate-x-[-150%] transition-translate duration-300
               app-bg rounded-r-2xl rounded-br-2xl
